@@ -15,16 +15,20 @@
     <section >
         <textarea class="mx-10 "id="texto_encriptar" cols="30" rows="10">Ingrese el texto aqui</textarea>
         <div class="items-end">
-            <button class="bg-slate-500 rounded-full mx-10 my-10 px-5 py-2 text-slate-50">Encriptar</button>
-            <button class="bg-slate-50 rounded-full mx-10 my-10 px-5 py-2 border-2 border-slate-500">desencriptar</button>
+            <button class="bg-slate-500 rounded-full mx-10 my-10 px-5 py-2 text-slate-50" id="encriptar" onclick="encriptar(document.getElementById('texto_encriptar').value)">Encriptar</button>
+            <button class="bg-slate-50 rounded-full mx-10 my-10 px-5 py-2 border-2 border-slate-500" id = "desencriptar" onclick="desencriptar(document.getElementById('texto_encriptar').value)">desencriptar</button>
         </div>
     </section>
-    <aside class="grid justify-items-center h-full">
-        <div class="bg-slate-500 rounded-lg grid justify-end mx-10 my-10">
+    <aside class="grid justify-items-center h-full bg-slate-500 rounded-lg ">
+        <div class = "collapse">
             <img class = "mx-10 my-10"src="/Sprint 1/imagenes/Muñeco.png" alt="">
-            <h2 class="text-center text-xl font-semibold py-2 text-slate-50">Ningun mensaje fue encontrado</h2>
-            <h3 class="text-center py-2 text-slate-50">Ingeresa el texto que desees encriptar o desencriptar</h3>       
+            <h2 class="text-center text-xl font-semibold py-2 text-slate-50" >Ningun mensaje fue encontrado</h2>
+            <h3 class="text-center py-2 text-slate-50">Ingeresa el texto que desees encriptar o desencriptar</h3> 
         </div>
+        <div class="grid justify-items-center">
+            <h2 class="text-center text-xl font-semibold py-2 text-slate-50" id = "texto_mostrar" >hola mundo</h2>
+            <button class="bg-slate-50 rounded-full mx-10 my-5 px-5 py-2 border-2 border-slate-500"> Copiar</button>
+        </div>          
     </aside>
 </div>
     <footer class="text-center my-10">
