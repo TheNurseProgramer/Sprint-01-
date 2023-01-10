@@ -86,6 +86,7 @@ function desencriptar (texto){
 }
 function copiar_texto (texto){
     navigator.clipboard.writeText(texto)
+    alert ("El texto ha sido copiado")
 }
 function alerta (){
     alert ("Asegurese de haber ingresado el texto!")
